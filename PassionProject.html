@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The joy of coffee</title>
+
+    <style>
+        body{ background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+            height: 100%;
+            margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        }
+        
+        h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 56px;
+        padding: 10px;
+        
+        }
+img{
+    text-align: center;
+    padding: 0 auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+
+}
+        h2 {
+            text-align: center;
+            font-weight: lighter;
+            color: #524f4f;
+            border: 2px solid #1f1b1b;
+            line-height: normal;
+            padding: 10px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 26px;
+            border-radius: 5px;
+            display: block;
+            
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .paragraph1{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .paragraph2{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .learn-aboutHonduras{
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        button{
+            background-color:#ffffff ;
+            display: block;
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px 10px;
+
+        }
+button:hover{
+    background-color: rosybrown;
+    opacity: 0.5;
+    cursor:grab;
+
+}
+.footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 40px;
+}
+    </style>
+</head>
+<div class="content">
+<body>
+    <h1>
+        The joy of coffee ☕️
+        </h1>
+        <img src= "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/026/943/original/cafe-1000x675.jpeg?1644499119" 
+        alt= "coffee cup and beans" 
+         />
+
+        <h2>
+        Provided by Honduras
+            </h2>
+            
+<p class="paragraph1">
+Coffee is one of the three most popular beverages in the world (alongside water and tea) and one of the most profitable international commodities. Though coffee is the basis for an endless array of beverages, its popularity is mainly attributed to its invigorating effect, which is produced by caffeine, an alkaloid present in coffee. Two species of coffee plants, Coffea arabica and C. canephora, supply almost all of the world’s consumption. Latin America, eastern Africa, Asia, and Arabia are leading producers of Arabica coffee.
+<br /> 
+</p>
+<h4>
+    Honduras as a coffee producer
+</h4>
+<p class="paragraph2">
+Honduras is a prolific coffee-producing country, ranking fifth globally in terms of coffee production, in addition to being the largest producer in Central America and third-largest in Latin America. Since the beginning of the 21st century, the Honduran specialty coffee industry has seen a dramatic increase in output in comparison to other Central American countries. Its fertile soil, favourable attitude, and suitable microclimate make it well suited for specialty coffee production, and it’s capable of producing a variety of types of coffees.
+</p>
+<a href= "https://www.thecoffeemaven.com/world/honduran-coffee" 
+target= "_blank" class="learn-aboutHonduras">
+Read more about Honduran coffee.
+</a>
+<br />
+
+</div>
+        <button>
+            Get the joy of coffee </button>
+            </br>
+<div class="footer">
+<span> This page was coded by <strong>✨Monica Osorio✨</strong> </span> </div>
+</div>     
+<script>
+    function getJoy() {
+          let name= prompt ("Hello, what is your name?");
+          let preference=prompt( name + ", on a scale from 1(low) to 10(high), how much do you love coffee?");
+
+        if (preference>=6) alert(  "😃 You are living right!");
+         else 
+          alert( "😣 Please reconsider your life choices " + name + "!");
+      }
+      
+      let getJoyButton = document.querySelector("Button");
+    getJoyButton.addEventListener("click" ,getJoy)
+
+</script>    
+</body>
+</html>
